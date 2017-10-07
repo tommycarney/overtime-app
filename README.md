@@ -20,3 +20,4 @@
 
 ## Refactors todos
 - Refactor user association integration test in posts_spec
+- Add full name method for users
