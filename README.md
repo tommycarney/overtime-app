@@ -4,9 +4,9 @@
  company needs documentation that salaried employees did or did not get overtime each week
 
 ## Models
-- Post -> date:date rationale:rationale
-x User -> Devise
-x AdminUser -> Single table inheritance
+- x Post -> date:date rationale:rationale
+- x User -> Devise
+- x AdminUser -> Single table inheritance
 
 ## Features
 - Approval workflow
