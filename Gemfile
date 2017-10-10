@@ -19,6 +19,8 @@ gem 'devise', '~> 4.3'
 gem 'boot'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'gritter', '~> 1.2'
+gem "administrate"
+gem "bourbon"
 
 
 group :development, :test do
