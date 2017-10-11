@@ -147,6 +147,8 @@ GEM
     pg (0.21.0)
     public_suffix (3.0.0)
     puma (3.10.0)
+    pundit (1.1.0)
+      activesupport (>= 3.0.0)
     rack (2.0.3)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -264,6 +266,7 @@ DEPENDENCIES
   listen (~> 3.0.5)
   pg (~> 0.18)
   puma (~> 3.0)
+  pundit (~> 1.1)
   rails (~> 5.0.6)
   rspec-rails
   sass-rails (~> 5.0)
