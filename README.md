@@ -22,6 +22,7 @@
 ## Refactors todos
 - Refactor user association integration test in posts_spec
 - refactor the status partial conditional
+- fix post_factory.rb with association with user
 
 ## Approval workflow
 - Add status to post

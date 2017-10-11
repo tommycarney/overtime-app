@@ -38,7 +38,7 @@ class ApplicationPolicy
     Pundit.policy_scope!(user, record.class)
   end
 
-  def self.admin_types
+  def self.admin_type
     ['AdminUser']
   end
 
