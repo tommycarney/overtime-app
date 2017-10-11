@@ -21,3 +21,10 @@
 
 ## Refactors todos
 - Refactor user association integration test in posts_spec
+
+## Approval workflow
+- Add status to post
+- Status required
+- Status to have default value
+- Implement approval stages
+- Locking
