@@ -1,12 +1,10 @@
 require 'rails_helper'
 
 describe "navigate" do
-
   before do
     @user = FactoryGirl.create(:user)
     login_as(@user, scope: :user)
   end
-
   describe "index" do
     before do
       visit posts_path
@@ -23,6 +21,16 @@ describe "navigate" do
       visit posts_path
       expect(page).to have_content(/Rationale|content/)
     end
+
+    it "has a scope so that only post creators see their posts" do
+      post1 = FactoryGirl.create(:post, user_id: @user.id)
+      post2 = FactoryGirl.create(:post, user_id: @user.id)
+      other_user = FactoryGirl.create(:post_from_another_user, rationale: "This post shouldn't be seen")
+
+      visit posts_path
+
+      expect(page).to_not have_content(/This post shouldn't be seen/)
+    end
   end
 
   describe "new" do
@@ -36,7 +44,7 @@ describe "navigate" do
 
   describe "delete" do
     it "can be deleted" do
-      @post = FactoryGirl.create(:post)
+      @post = FactoryGirl.create(:post, user_id: @user.id)
       visit posts_path
 
       click_link("delete_post_#{@post.id}_from_index")

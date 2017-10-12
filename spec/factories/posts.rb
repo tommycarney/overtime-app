@@ -11,4 +11,10 @@ FactoryGirl.define do
     user
   end
 
+  factory :post_from_another_user, class: "Post" do
+    date Date.yesterday
+    rationale "Some more content"
+    association :user, factory: [:non_authorized_user]
+  end
+
 end
