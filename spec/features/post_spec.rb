@@ -64,7 +64,6 @@ describe "navigate" do
       fill_in 'post[date]', with: Date.today
       fill_in 'post[rationale]', with: "Client asked for it"
       fill_in 'post[overtime_request]', with: 4.5
-      click_on "Save"
       expect { click_on "Save" }.to change(Post, :count).by(1)
     end
 
