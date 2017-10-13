@@ -23,6 +23,7 @@ gem "administrate"
 gem "bourbon"
 gem 'pundit', '~> 1.1'
 gem 'twilio-ruby', '~> 5.3', '>= 5.3.1'
+gem 'dot_env', '~> 0.0.3'
 
 
 
