@@ -7,6 +7,7 @@
 - x Post -> date:date rationale:rationale
 - x User -> Devise
 - x AdminUser -> Single table inheritance
+- Audit log
 
 ## Features
 - Approval workflow

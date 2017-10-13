@@ -22,6 +22,7 @@ gem 'gritter', '~> 1.2'
 gem "administrate"
 gem "bourbon"
 gem 'pundit', '~> 1.1'
+gem 'twilio-ruby', '~> 5.3', '>= 5.3.1'
 
 
 
