@@ -20,14 +20,12 @@
 ## UI
 - X Bootstrap -. formatting
 
-## Refactors todos
-- Refactor user association integration test in posts_spec
-- refactor the status partial conditional
-- fix post_factory.rb with association with user
-
 ## Approval workflow
 - Add status to post
 - Status required
 - Status to have default value
 - Implement approval stages
 - Locking
+
+## todos
+- Integrate validations for phone attr in user
