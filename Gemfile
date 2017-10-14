@@ -23,6 +23,7 @@ gem "administrate"
 gem "bourbon"
 gem 'pundit', '~> 1.1'
 gem 'twilio-ruby', '~> 5.3', '>= 5.3.1'
+gem 'kaminari', '~> 1.1'
 
 group :development, :test do
   gem 'byebug', platform: :mri

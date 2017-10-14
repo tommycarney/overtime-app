@@ -20,6 +20,8 @@
     </tr>
   </thead>
   <tbody>
-      <%= render @audit_log %>
+      <%= render @audit_logs %>
   </tbody>
 </table>
+
+<%= paginate(@audit_logs) %>
