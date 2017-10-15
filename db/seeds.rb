@@ -16,7 +16,9 @@ puts "1 user created"
 
 100.times do |post|
 
-  Post.create!(date: Date.today, rationale: "#{post} rationale content", user_id: @user.id, overtime_request: 2.5)
+  Post.create!(date: Date.today, rationale: "#{post} Lorem ipsum dolor sit amet, no putent eligendi per, eam ipsum malorum an. No ius prima ubique postea, virtute constituam ea qui. Duo eu altera ponderum adipiscing, sed cu homero probatus. Id pri iudico legendos dignissim. Est an veniam tritani scripserit, pro clita virtute perpetua no.
+
+Debet debitis scaevola eam id, cum id debet scripta, ut mollis electram quo. Vix omnium nostrum an, mandamus patrioque comprehensam mei ei. Quot iuvaret cum ut. Audire commune ea eam, modo purto utroque vim cu. Fastidii torquatos te mel.", user_id: @user.id, overtime_request: 2.5)
 
 end
 
