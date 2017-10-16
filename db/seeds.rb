@@ -14,6 +14,13 @@ AdminUser.create!(email: "admin@test.com",
 
 puts "1 user created"
 
+AuditLog.create!(user_id: @user.id, start_date: (Date.today - 6.days))
+AuditLog.create!(user_id: @user.id, start_date: (Date.today - 1.weeks) - 6.days)
+AuditLog.create!(user_id: @user.id, start_date: (Date.today - 2.weeks) - 6.days)
+
+
+puts "3 audit log have been created"
+
 100.times do |post|
 
   Post.create!(date: Date.today, rationale: "#{post} Lorem ipsum dolor sit amet, no putent eligendi per, eam ipsum malorum an. No ius prima ubique postea, virtute constituam ea qui. Duo eu altera ponderum adipiscing, sed cu homero probatus. Id pri iudico legendos dignissim. Est an veniam tritani scripserit, pro clita virtute perpetua no.
@@ -23,11 +30,3 @@ Debet debitis scaevola eam id, cum id debet scripta, ut mollis electram quo. Vix
 end
 
 puts "100 posts have been created"
-
-
-AuditLog.create!(user_id: @user.id, start_date: (Date.today - 6.days))
-AuditLog.create!(user_id: @user.id, start_date: (Date.today - 1.weeks) - 6.days)
-AuditLog.create!(user_id: @user.id, start_date: (Date.today - 2.weeks) - 6.days)
-
-
-puts "3 audit log have been created"
