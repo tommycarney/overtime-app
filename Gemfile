@@ -24,6 +24,7 @@ gem "bourbon"
 gem 'pundit', '~> 1.1'
 gem 'twilio-ruby', '~> 5.3', '>= 5.3.1'
 gem 'kaminari', :git => 'https://github.com/kaminari/kaminari' # if using github for gem, the issue is that Rubygem has an outdated version with an issue
+gem 'rails_12factor', '~> 0.0.3'
 
 
 
