@@ -1,11 +1,11 @@
-@employee = Employee.create!(email: "test@test.com",
+@employee = Employee.create!(email: "tommycarney@gmail.com",
                     password: "asdfasdf",
                     password_confirmation: "asdfasdf",
                     first_name: "Thomas",
                     last_name: "Carney",
                     phone: "1638687560")
 
-AdminUser.create!(email: "admin@test.com",
+AdminUser.create!(email: "thomas@thomascarney.org",
                   password: "asdfasdf",
                   password_confirmation: "asdfasdf",
                   first_name: "Thomas",
